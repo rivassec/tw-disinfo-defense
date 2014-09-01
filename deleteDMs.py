@@ -1,15 +1,6 @@
 import json
 import requests
 from requests_oauthlib import OAuth1
-#import re
-#from threading import Thread
-#import threading
-#from time import sleep
-#import operator
-#import sys
-#import os
-#import collections
-
 
 consumer_key='<YOUR CONSUMER KEY HERE>'
 consumer_secret='<YOUR CONSUMER SECRET HERE>'
