@@ -16,14 +16,14 @@ shitlist = ['amaia_roja', 'anat5', 'carollafra', 'contraofensiva',
 
 
 
-#credentials from ghost account
+#credentials from ghost account get your keys from https://apps.twitter.com/
 consumer_key=''
 consumer_secret=''
 access_token_key=''
 access_token_secret=''
 
 
-#credentials from actual account
+#credentials from actual account get your keys from https://apps.twitter.com/ 
 consumer_key2=''
 consumer_secret2=''
 access_token_key2=''
