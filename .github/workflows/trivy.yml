@@ -1,4 +1,4 @@
-name: name: Trivy Scan - tw-disinfo-defense
+name: Trivy Scan - tw-disinfo-defense
 
 on:
   push:
