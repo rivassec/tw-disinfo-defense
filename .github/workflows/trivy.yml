@@ -1,0 +1,28 @@
+name: Trivy Scan
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Download latest Trivy release
+      run: |
+        TRIVY_VERSION=$(curl -s https://api.github.com/repos/aquasecurity/trivy/releases/latest | grep tag_name | cut -d '"' -f 4)
+        wget https://github.com/aquasecurity/trivy/releases/download/${TRIVY_VERSION}/trivy_${TRIVY_VERSION#v}_Linux-64bit.tar.gz
+        tar -xzf trivy_${TRIVY_VERSION#v}_Linux-64bit.tar.gz
+        sudo mv trivy /usr/local/bin/
+
+    - name: Scan project directory (fs scan)
+      run: trivy fs . --severity CRITICAL,HIGH --no-progress

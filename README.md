@@ -1,4 +1,5 @@
 # Twitter Cleanup Toolkit
+[![Trivy Scan](https://github.com/rivassec/twitter-cleanup-toolkit/actions/workflows/trivy.yml/badge.svg?branch=main)](https://github.com/rivassec/twitter-cleanup-toolkit/actions/workflows/trivy.yml)
 
 This repository contains a set of Python scripts for automating common Twitter hygiene tasks using the Twitter v1.1 API and `requests_oauthlib`.
 
