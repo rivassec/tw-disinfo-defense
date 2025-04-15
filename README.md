@@ -58,5 +58,5 @@ access_token_secret = "..."
 ---
 
 ## License
-
+MIT
 MIT — use at your own risk.
